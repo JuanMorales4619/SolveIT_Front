@@ -1,0 +1,38 @@
+<form novalidate [formGroup]="user" (ngSubmit)="subtmit(user)" >
+  <label>
+    <span>Nombre completo</span>
+    <input type="text" placeholder="nombre completo" formControlName="name">
+    <div class="error" *ngIf="user.get('name')?.hasError('required') && user.get('name')?.touched">Nombre de usuario vacio</div>
+  </label>
+  <label>
+    <span>Apellidos completos</span>
+    <input type="text" placeholder="Apellidos completos" formControlName="lastName">
+  </label>
+  <label>
+    <span>Email</span>
+    <input type="text" placeholder="ejemplo@dominio.com" formControlName="email">
+  </label>
+  <label>
+    <span>Contraseña</span>
+    <input type="password" placeholder="contraseña" formControlName="password">
+
+  </label>
+  <label>
+    <span>Repita su Contraseña</span>
+    <input type="password" placeholder="contraseña" formControlName="passwordRepeat">
+  </label>
+  <label>
+    <span>Ingrese su numero de telefono</span>
+    <input type="number" placeholder="1234567" formControlName="phoneNumber">
+  </label>
+  <label>
+    <span>Ingrese el campo de empleo</span>
+    <input type="text" placeholder="campo de empleo" formControlName="employmentField">
+  </label>
+  <div>
+    <button class="registro" type="submit" [disabled]="user.invalid">Registrar</button>
+  </div>
+  <div>
+    <button class="registro" type="submit" (click)="login()">Iniciar sesion</button>
+  </div>
+</form>

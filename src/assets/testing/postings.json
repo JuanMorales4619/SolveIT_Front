@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Prueba titulo 1",
+        "description": "Prueba descripcion 1",
+        "phonenumber": "1234567890",
+        "category": "Categoria de prueba 1"
+    },
+    {
+        "title": "Prueba titulo 2",
+        "description": "Prueba descripcion 2",
+        "phonenumber": "1234567890",
+        "category": "Categoria de prueba 2"
+    },
+    {
+        "title": "Prueba titulo 3",
+        "description": "Prueba descripcion 3",
+        "phonenumber": "1234567890",
+        "category": "Categoria de prueba 3"
+    }
+]

@@ -1,0 +1,19 @@
+<header>
+    <div class="container">
+        <a href="#" routeLink="/" class="logo">
+            <img src="../../assets/logosolveit.png" alt="Logo solveit" class="logosolveit">
+        </a> 
+        <input class="busqueda" type="text" placeholder="Buscar..." (keyup)="onKeyUp($event)" [(ngModel)]="searchQuery">
+        <nav>
+            <ul class="szs">
+                <li>
+                    <a routerLink="/publication/create" routerLinkActive="active">Crear publicacion</a>
+                </li>
+                <li>
+                    <a href="/profile" routeLinkActive="/active">Profile</a>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

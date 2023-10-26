@@ -1,0 +1,70 @@
+
+header{
+    background: rgb(66, 65, 65);
+    padding: 0;
+    border-bottom: 1px solid #3374ff;
+    position: sticky;
+    height: 100px;
+}
+.busqueda{
+    position: absolute; 
+    margin: 1em;
+    left: 33%;
+    width: 30%;
+    top: 25%;
+    height: 30%;
+    border: 3px solid white;
+    border-radius: 15px;
+
+}
+
+
+a{
+    color:white;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    height: 100px;
+}
+
+nav ul li {
+    padding: 1rem;
+    display: inline-block;
+    height: 100px;
+}
+.szs{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+}
+.logosolveit{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.logo{
+    box-sizing: border-box;
+    color:white;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    height: 5%;
+    width: 5%;
+}

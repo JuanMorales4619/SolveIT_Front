@@ -1,0 +1,63 @@
+<div class="container-profile">
+
+    <div class="content-profile">
+
+
+        <div class="profile-description-content">
+            <div class="profile-image">
+                <img src="../../assets/profile-icon.png" alt="profile-icon" />
+            </div>
+            <hr>
+
+            <div class="element">
+                <h2>Nombre:</h2>
+                <p>{{user.name}}</p>
+            </div>
+            <hr>
+            <div class="element">
+                <h2>Telefono:</h2>
+                <p>{{user.phone}}</p>
+            </div>
+            <hr>
+            <div class="element">
+                <h2>Correo:</h2>
+                <p>{{user.email}}</p>
+            </div>
+            <hr>
+            <div class="element">
+                <h1>Campo de empleo:</h1>
+                <p>{{user.employmentField}}</p>
+            </div>
+
+
+        </div>
+        <div class="container-profile-buttons">
+            <button name="btnDeleteAccount" class="btn-profile-form btn-delete" (click)="deleteAccount()">Eliminar cuenta</button>
+            <button name="btnLogOut" class="btn-profile-form btn-logout" (click)="logOut()">Cerrar sesion</button>        
+        </div>
+
+    </div>
+
+    <div class="container-postings">
+        
+        <!-- Si no se carga nada, muestra mensaje donde no hay contenido -->
+        <h5 *ngIf="product == undefined">Sin contenido que mostrar</h5> 
+
+        <!-- En caso de que SI cargue la info desde el back, mostrara las publicaciones del usuario. -->
+        <div class="content-postings" *ngIf="product != undefined">
+            <div class="contenido" *ngFor="let product of product">
+                <ul class="Edicion">
+                  <div class = "datos">
+                  {{ product.publicationTitle}}<br /></div>
+                  <div class = "datos"><br/><h3 class = "descripciones_generales">Descripcion</h3>
+                  {{ product.description}}<br /><br /></div>
+                  <div class = "datos"><br/><h3 class = "descripciones_generales">Contacto</h3>
+                  {{ product.phone}}<br /><br /></div>
+                  <div class = "datos"><br/><h3 class = "descripciones_generales">Categoria de Trabajo</h3>
+                  {{ product.category.description}}<br /><br /></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,52 @@
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background:linear-gradient(white,#85C1E9);
+}
+
+.Titulo{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100px;
+  font-size: 50px;
+}
+
+.Edicion{
+  text-align: center;
+  border: 5px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.descripciones_generales{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+}
+
+.datos{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Edicion:hover{
+  background-color: gray;
+}
+h1{
+  font-size: 40px;
+  color: black;
+  font-style: italic;
+  position: relative;
+  left: 45%;
+  margin-top: 10px;
+}

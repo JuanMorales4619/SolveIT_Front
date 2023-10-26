@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    background: #85C1E9;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .custom-form {
+    min-width: 300px;
+    max-width: 60%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    color: black;
+    margin-top: 10rem;
+  }
+  .custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+        rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    background: #85C1E9;
+    color: black;
+  }
+  .custom-form input:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+  }
+  .login{
+    height: 120vh;
+    background: linear-gradient(white,#85C1E9);
+  }
+
+  .logosolveit {
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+    vertical-align: middle; 
+    margin-top: 30px;
+    border-radius: 100px;
+  }

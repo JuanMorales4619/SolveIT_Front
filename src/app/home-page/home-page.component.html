@@ -1,0 +1,18 @@
+<h1>Home Page</h1>
+<div class = "contenedor">
+
+  
+  <div class="data" *ngFor="let product of product">
+    <ul class="Edicion">
+      <div class = "datos">
+      {{ product.publicationTitle}}<br /></div>
+      <div class = "datos"><br/><h3 class = "descripciones_generales">Descripcion</h3>
+      {{ product.description}}<br /><br /></div>
+      <div class = "datos"><br/><h3 class = "descripciones_generales">Contacto</h3>
+      {{ product.phone}}<br /><br /></div>
+      <div class = "datos"><br/><h3 class = "descripciones_generales">Categoria de Trabajo</h3>
+      {{ product.category.description}}<br /><br /></div>
+    </ul>
+  </div>
+</div>
+
