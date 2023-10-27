@@ -22,7 +22,6 @@ export class CreatePublicationComponent implements OnInit {
 
     
     let response = this.http.post<any>('api/v1/rest/publication',body,{headers});
-    console.log("aqui mando una cosa");
     response.subscribe((data)=>console.log(data));
     console.log(publication);
   }

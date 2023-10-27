@@ -1,20 +1,25 @@
 <div class="container">
-    <h1>Crear Publicaicon</h1>
     <form #publication="ngForm" (ngSubmit)="submit(publication)">
         <div class="form-group">
             <label for="title">Titulo</label><br>
             <input #title="ngModel" required  type="text" name="title" ngModel>
             <div *ngIf="title.touched && title.invalid" class="alert alert-danger">
-                Inserte un titulo
+                Inserte un titulo.
             </div>
         </div>
         <div class="form-grup">
             <label for="description">Descripcion</label><br>
-            <textarea required type="textarea" name="description" ngModel></textarea>
+            <textarea #Description = "ngModel" required type="textarea" name="description" ngModel></textarea>
+            <div *ngIf="Description.touched && Description.invalid" class="alert alert-danger">
+                Ingrese una descripcion.
+            </div>
         </div>
         <div class="form-grup">
             <label for="contact">Telefono</label><br>
-            <input required type="tel" name="contact" ngModel>
+            <input #phone= "ngModel" required type="tel" name="contact" ngModel pattern="^[0-9]*$">
+            <div *ngIf="phone.touched && phone.invalid" class="alert alert-danger">
+                Ingrese un numero de telefono valido.
+            </div>
         </div>
         <div class="form-grup">
             <label for="type">Categoria</label><br>
