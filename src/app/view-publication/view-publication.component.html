@@ -8,6 +8,8 @@
             {{ publication.phone}}<br /><br /></div>
         <div class = "data"><br/><h3 class = "descripciones_generales">Categoria de Trabajo</h3>
             {{ publication.category.description}}<br /><br /></div>
-        <button>Solicitar</button>
+        <div class = "data"><br/><h3 class = "descripciones_generales">Nombre del publicador</h3>
+            {{ publication.userName}}<br /><br /></div>
+        <button class = "btn" [disabled]="!publication.status" (click)="onClick()">Solicitar</button>
     </div>
 </div>

@@ -22,7 +22,6 @@ export class HomePageComponent {
   }
   onClick(product: any){
     let actualPublication = product
-    console.log(actualPublication);
     sessionStorage.setItem('actualPublicationId',actualPublication.id);
     this.router.navigate(['/publication/view']);
   }
