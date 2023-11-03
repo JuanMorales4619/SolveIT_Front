@@ -14,7 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './services/profile/profile.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './auth.service';
-
+import { ViewPublicationComponent } from './view-publication/view-publication.component';
 
 const routes: Routes = [
   {
@@ -38,6 +38,11 @@ const routes: Routes = [
   }
   ,
   {
+    path: 'publication/view',
+    component: ViewPublicationComponent
+  }
+  ,
+  {
     path:' ',
     pathMatch: 'prefix',
     redirectTo: 'home'
@@ -58,6 +63,7 @@ const routes: Routes = [
     RegistroComponent,
     LoginComponent,
     ProfileComponent,
+    ViewPublicationComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
